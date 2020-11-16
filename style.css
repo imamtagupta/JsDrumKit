@@ -1,0 +1,57 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+}
+.container .key-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container .key-container .key{
+    width: 90px;
+    height: 90px;
+    user-select: none;
+    text-align: center;
+    border: 1px solid #fff;
+    transition: all 0.2s;
+}
+.container .key-container .key .letter{
+    font-size: 3vw;
+    padding: 15px 0 0;
+}
+.container .key-container .key .caption{
+    font-size: .8em;
+    text-transform: uppercase;
+    color: yellow;
+}
+.playing{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px 5px #ff0;
+}
+
+
+@media only screen and (max-width:768px){
+    .container .key-container .key{
+        width: 70px;
+        height: 70px;
+    }
+    .container .key-container .key .letter{
+        font-size: 1.5em;
+        
+    }
+}
